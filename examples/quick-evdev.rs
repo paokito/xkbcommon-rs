@@ -51,7 +51,7 @@ fn main() {
 
                 // Get keysym
                 let keysym = state.key_get_one_sym(keycode);
-                print!("keysym: {} ", xkb::keysym_get_name(keysym));
+                print!("keysym: {:?} ", xkb::keysym_get_name(keysym));
 
                 // Update state
                 let _changes = if event.value() == KEY_STATE_RELEASE {
